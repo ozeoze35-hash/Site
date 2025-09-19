@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="css1.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div class="fundo">
+      <div class="calculadora">
+      <p id="resposta"></p>
+      <table>
+        <tr>
+        <td><button class="button"onclick="limpar()">C</button></td>
+        <td><button class="button" onclick="backspace()"><</button></td>
+        <td><button class="button" onclick="batata('/')">÷</button></td>
+        <td><button class="button"onclick="batata('*')">×</button></td>
+      </tr>
+      <tr>
+        <td><button class="button" onclick="batata('1')">1</button></td>
+       <td><button class="button" onclick="batata('2')">2</button></td>
+       <td><button class="button" onclick="batata('3')">3</button></td>
+       <td><button class="button" onclick="batata('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button class="button" onclick="batata('4')">4</button></td>
+        <td><button class="button" onclick="batata('5')">5</button></td>
+       <td><button class="button" onclick="batata('6')">6</button></td>
+      <td><button class="button" onclick="batata('+')">+</button></td>
+      </tr>
+      <tr>
+       <td><button class="button" onclick="batata('7')">7</button></td>
+      <td><button class="button" onclick="batata('8')">8</button></td>
+       <td><button class="button" onclick="batata('9')">9</button></td>
+       <td rowspan="2"><button style="height: 92px;" class="button" onclick="soma()">=</button></td>
+      </tr>
+      <tr>
+       <td colspan="2"><button style="width: 92px;" class="button" onclick="batata('0')">0</button></td>  
+        <td><button class="button" onclick="batata('.')">.</button></td>
+      </tr>
+      </table>
+      </div>
+    </div>
+    <script src="js1.js"></script>
+  </body>
+</html>
